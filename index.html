@@ -9,18 +9,35 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 header">
     <div class="container">
       <div class="flex items-center relative justify-between">
         <div class="px-4">
           <a href="#home" class="font-bold text-lg text-primary block py-5">Jussy</a>
         </div>
         <div class="flex items-center px-4">
-          <button id="hamberger" name="hamberger" type="button" class="absolute right-4">
+          <button id="hamberger" name="hamberger" type="button" class="block absolute right-4 lg:hidden">
             <span class="hamberger transition duration-300 ease-in-out origin-top-left"></span>
             <span class="hamberger transition duration-300 ease-in-out"></span>
             <span class="hamberger transition duration-300 ease-in-out origin-bottom-left"></span>
           </button>
+
+          <nav id="menu" class="absolute hidden right-5 top-full py-5 bg-white shadow-lg w-full max-w-[250px] rounded-lg lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home" class="text-base text-gelap py-2 mx-8 flex group-hover:text-primary">Home</a>
+              </li>
+              <li class="group">
+                <a href="#about" class="text-base text-gelap py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+              </li>
+              <li class="group">
+                <a href="#home" class="text-base text-gelap py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+              </li>
+              <li class="group">
+                <a href="#home" class="text-base text-gelap py-2 mx-8 flex group-hover:text-primary">Dukungan</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -57,13 +74,13 @@
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full px-5 mb-9 lg:w-1/2">
-          <h3 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h3>
-          <h5 class="font-bold text-gelap text-2xl mb-3 max-w-md lg:text-4xl">Yuk, Upgrade skill di mana saja</h5>
-          <p class="font-medium text-secondary max-w-md lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ex, aliquam molestiae nobis deleniti reprehenderit.</p>
+          <h3 class="font-bold uppercase text-primary text-lg mb-3 underline">Tentang Saya</h3>
+          <h5 class="font-bold text-gelap text-2xl mb-3 max-w-md lg:text-4xl"> Upgrade skill coding dari <span class="text-primary">otodidak</span> hingga <span class="text-primary">maniak</span></h5>
+          <p class="font-medium text-secondary max-w-md lg:text-lg">Memulai belajar coding dari tahun 2021 paling awal mengenal namanya bahasa pemroramman tingkat tinggi, dan akan terus dikembangkan.</p>
         </div>
         <div class="px-5 mb-9 w-full pt-3 lg:w-1/2">
-          <h3 class="font-semibold mb-3 text-gelap text-2xl lg:text-3xl lg:pt-10">Ayok Berteman !!!</h3>
-          <p class="text-secondary font-medium text-base mb-7 max-w-md">Teman sesungguhnya adalah ketika Anda memintanya untuk mengikuti Anda, dia tidak bertanya ke mana atau di mana, namun beranjak dan pergi.</p>
+          <h3 class="font-semibold mb-3 text-gelap text-2xl lg:text-3xl lg:pt-10">Ayok Berteman Maniak Coders!!!</h3>
+          <p class="text-secondary font-medium text-base mb-7 max-w-md lg:text-lg">Teman sesungguhnya adalah ketika Anda memintanya untuk mengikuti Anda, dia tidak bertanya ke mana atau di mana, namun beranjak dan pergi.</p>
           <div class="flex flex-wrap">
             <!-- WhatsApp -->
             <a href="https://wa.me/+6283192847276" target="_blank" class="w-9 h-9 rounded-full mr-3 flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"><svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -81,7 +98,65 @@
     </div>
   </section>
   <!-- Tentang Selesai -->
-  
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="bg-slate-200 pt-36 pb-16">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <h2 class="font-semibold text-primary text-lg uppercase mb-2">Portfolio</h2>
+          <h4 class="font-bold text-gelap text-2xl mb-4">Project Terkini</h4>
+          <p class="text-secondary font-medium text-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos adipisci magni reiciendis, iure illo.</p>
+        </div>
+      </div>
+      <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <div class="mb-12 p-4 lg:w-1/2">
+          <div class="rounded-md shadow-lg overflow-hidden">
+            <img src="dist/img/project/jussyfilm.png" alt="filmbioskop" width="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-gelap mt-3 mb-2">Website film reactJS</h3>
+          <p class="font-md text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, minus deleniti! Odit assumenda nemo necessitatibus?</p>
+        </div>
+        <div class="mb-12 p-4 lg:w-1/2">
+          <div class="rounded-md shadow-lg overflow-hidden">
+            <img src="dist/img/project/jussytools.png" alt="weater-tools" width="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-gelap mt-3 mb-2">Tools Weater GEOAPI</h3>
+          <p class="font-md text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, minus deleniti! Odit assumenda nemo necessitatibus?</p>
+        </div>
+        <div class="mb-12 p-4 lg:w-1/2">
+          <div class="rounded-md shadow-lg overflow-hidden">
+            <img src="dist/img/project/movieapi.png" alt="movieapi" width="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-gelap mt-3 mb-2">Engine Search Film (IMDBAPI)</h3>
+          <p class="font-md text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, minus deleniti! Odit assumenda nemo necessitatibus?</p>
+        </div>
+        <div class="mb-12 p-4 lg:w-1/2">
+          <div class="rounded-md shadow-lg overflow-hidden">
+            <img src="dist/img/project/jussytools.png" alt="weater-tools" width="w-full">
+          </div>
+          <h3 class="font-semibold text-xl text-gelap mt-3 mb-2">Tools Weater GEOAPI</h3>
+          <p class="font-md text-base text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, minus deleniti! Odit assumenda nemo necessitatibus?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio end -->
+
+  <!-- client start -->
+  <section id="client" class="bg-slate-900 pt-36 pb-16">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <h2 class="font-semibold text-primary text-lg uppercase mb-2">Client</h2>
+          <h4 class="font-bold text-white text-2xl mb-4">Bekerja Sama dengan</h4>
+          <p class="text-secondary font-medium text-medium">Bebarapa Perusahaan ternama yang pernah bekerja sama (Padahal tidak).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- client end -->
+
   <script src="dist/js/script.js"></script>
 </body>
 </html>
