@@ -4,10 +4,8 @@ window.onscroll = function () {
 
   if (window.pageYOffset > fixed) {
     header.classList.add('navbar-fixed')
-    console.log('ditambahkan')
   }else {
     header.classList.remove('navbar-fixed')
-    console.log('dihapus')
   }
 }
 
